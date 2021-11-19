@@ -22,4 +22,10 @@
     return YES;
 }
 
+//-(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+//
+//    NSLog(@"App Delegate");
+//    return UIInterfaceOrientationMaskPortrait;
+//}
+
 @end

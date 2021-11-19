@@ -139,6 +139,7 @@
 				6A7D08EC1A5DAFD600C4E749 /* Resources */,
 				B51E086A225FF6FF004E034C /* Embed Frameworks */,
 				4926569AC71BA10294DB43BA /* [CP] Embed Pods Frameworks */,
+				6FD8692BD96BF0B7EDF2EC3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,14 +231,36 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-frameworks.sh",
 				"${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWPlayer_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD8692BD96BF0B7EDF2EC3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-resources.sh",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.6.1_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.6.1_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

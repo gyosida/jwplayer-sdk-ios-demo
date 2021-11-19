@@ -1,16 +1,27 @@
 PODS:
+  - google-cast-sdk (4.6.1):
+    - google-cast-sdk/Core (= 4.6.1)
+    - Protobuf (~> 3.13)
+  - google-cast-sdk/Core (4.6.1):
+    - Protobuf (~> 3.13)
   - JWPlayer-SDK (3.13.0)
+  - Protobuf (3.19.1)
 
 DEPENDENCIES:
+  - google-cast-sdk
   - JWPlayer-SDK
 
 SPEC REPOS:
   trunk:
+    - google-cast-sdk
     - JWPlayer-SDK
+    - Protobuf
 
 SPEC CHECKSUMS:
+  google-cast-sdk: 9fc76175641bc24ef2515e0263344bd2c5c4e75c
   JWPlayer-SDK: c6b22ec276f07e72179c13a0a360ea1343684533
+  Protobuf: 3724efa50cb2846d7ccebc8691c574e85fd74471
 
-PODFILE CHECKSUM: 8c5d186ecbd142f2978443e6e4b806085bf11d87
+PODFILE CHECKSUM: 273a10cc11535d0b3ea1c205583671359231865b
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.11.0
